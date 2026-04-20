@@ -20,7 +20,7 @@
 					<div class="content">
 						<header>
 							<h2>Hi, my name is Cameron Nowell</h2>
-							<p>Electrical Engineering Student<br />
+							<p>I'm a senior Electrical Engineering Student and I plan to enter graduate school after graduating<br />
 							Here are some projects I'm proud of!</p>
 						</header>
 						<span class="image"><img src="images/me2.jpg" alt="" /></span>
@@ -34,7 +34,9 @@
 				<div class="container">
 					<header class="major">
 						<h2>Clemson IEEE Robotics</h2>
-						<p>Every year, our team competes at the IEEE SoutheastCon competition.</p>
+						<p>Every year, our team competes at the IEEE SoutheastCon hardware competition. This competition is hosted by IEEE, the Institute for Electrical and Electronics Engineers and is attended
+							by students from dozens of university teams, with the aim of completing the most objectives for each year's competition.
+						</p>
 					</header>
 
 					<div class="row gtr-150">
@@ -64,10 +66,16 @@
 								<h3>About the Competition</h3>
 								<p>
 									In this competition, teams design a fully autonomous robot that must navigate a complex obstacle course while 
-									completing multiple logistics tasks under a time limit. The robot’s primary objectives are to collect and sort 
-									packages into designated delivery zones, then retrieve fuel tanks and transport them across a hazardous gap (crater)—often 
-									requiring creative traversal methods like a zip line or bridge. After crossing, the robot must assemble the fuel tanks into a 
-									launch system and finally activate a button to stop the timer, completing the mission.
+									completing multiple logistics tasks under a time limit. The robot’s primary objectives are to move small cubes 
+								    into designated delivery zones, then retrieve small cylindrical "fuel tanks" and transport them across a ditch.
+									After crossing, the robot must place fuel tanks into a stand and finally activate a button to stop the timer.
+								</p>
+								<p>
+									Our design useed a robotic arm to grab many of the cubes immediatly before pushing most of the smaller cubes with the front of the robot. 
+									Due to the complexity needed to carry the fuel tanks and reassembling them, we elected to finish with a quicker time by skipping this task.
+									To cross over the ditch, four motors were added, two on the front and two on the back. These motors have small arms that, when rotated, 
+									pull the robot out of the ditch. This design is shown in the video above, and was able to place first in the competition out of over 40 
+									university teams from across the Southeast.
 								</p>
 								<h3>My contributions</h3>
 								<ul>
@@ -92,12 +100,19 @@
 								</video>
 								<h3>About the Competition</h3>
 								<p>
-									In this competition, teams design a fully autonomous robot that must navigate a complex obstacle course while completing 
-									multiple logistics tasks under a time limit. The robot’s primary objectives are to collect and sort packages into designated delivery zones, 
-									then retrieve fuel tanks and transport them across a hazardous gap (crater)—often requiring creative traversal methods like a zip line or bridge. 
-									After crossing, the robot must assemble the fuel tanks into a launch system and finally activate a button to stop the timer, completing the mission.
+									In this competition, teams design a fully autonomous robot that are tasked with collecting scattered resources (“astral materials”) across a field 
+									and sorting them based on if they are magnetic ("Geodinium") or non-magnetic ("Nebulite"). The robot must gather materials from both open areas and an enclosed "cave". 
+									It also needs to transport containers to one of the pads to the left of the board, storing the resources in their respective containers. Extra points are given if the 
+									robot also places a custom made beacon/flag down and move the containers to a randomly selected pad.
 								</p>
-
+								<p>
+									Our design uses computer vision as well as an IMU (accelerometer and gyroscope) and motor encoders to accurately determine the position of the robot on the playing field.
+									The resources are picked up and stored in the top of the robot using rollers that pull up materials in front of the robot. To optimize the number we collected, the robot
+									was programmed to sweep across both the open area and cave area. Due to inconsistencies in sorting the materials, we elected to skip this step and optimize other aspects 
+									of our design. A small lever arm is used to grip containers that need moving, and the stored materials are moved to these containers through a lift mechanism that pushes 
+									the storage system over the output. This design is shown in the video above, and was able to place first in the competition out of over 40 university teams from across 
+									the Southeast.
+								</p>
 								<h3>My contributions</h3>
 								<ul>
 									<li>Programmed Pi and Pi Pico microcontrollers to interface with peripheral devices using I2C/UART communication</li>
